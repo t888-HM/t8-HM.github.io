@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>My Homepage</title>
+    <!-- 数式を綺麗に出すためのライブラリ (MathJax) -->
+    <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, serif; margin: 40px; background-color: #fff; color: #000; line-height: 1.6; }
+        #container { max-width: 800px; margin: 0 auto; }
+        h1 { font-size: 24px; border-bottom: 2px solid #000; padding-bottom: 5px; margin-bottom: 30px; }
+        h2 { font-size: 18px; border-left: 5px solid #333; padding-left: 10px; margin-top: 40px; margin-bottom: 15px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        a { color: #0000ee; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .math-box { background-color: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0; }
+    </style>
+</head>
+<body>
+
+<div id="container">
+
+    <h1>Homepage</h1>
+
+    <h2>プロフィール</h2>
+    <ul>
+        <li><strong>所属:</strong> (あにょあにょ)</li>
+        <li><strong>研究分野:</strong> 数論力学系など</li>
+    </ul>
+
+    <h2>研究ノート・メモ</h2>
+    <p>ここに文章を書いていきます。LaTeX数式も以下のように綺麗に表示されます。</p>
+    
+    <div class="math-box">
+        文章中の数式： $f(x) = x^2$ や $\mathbb{C}_p$ など。<br><br>
+        独立した数式：
+        $$ \int_{\Gamma} \omega = 2\pi i </p>
+        $$ \sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6} $$
+    </div>
+
+    <h2>論文・プレプリント</h2>
+    <ul>
+        <li>準備中</li>
+    </ul>
+
+</div>
+
+</body>
+</html>
